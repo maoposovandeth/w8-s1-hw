@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>StudyHub — Learning Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-full font-sans bg-gray-50 text-blue-900 p-6 flex justify-center items-start">
+    <div class="container w-full max-w-[1100px]" role="main">
+        
+        <header class="flex justify-between items-center gap-4 mb-6">
+            <div class="brand flex items-center gap-3">
+                <div class="logo w-12 h-12 rounded-[10px] bg-gradient-to-br from-indigo-600 to-cyan-400 flex items-center justify-center text-white font-bold shadow-lg">SH</div>
+                <div>
+                    <div class="font-extrabold">StudyHub</div> 
+                    <div class="text-sm text-slate-500">Learn together • Build faster</div> </div>
+            </div>
+
+            <nav aria-label="Primary" class="flex gap-4 items-center">
+                <a href="#courses" class="text-slate-500 font-semibold px-3 py-2 rounded-md hover:bg-gray-100 transition" >Courses</a>
+                <a href="#resources" class="text-slate-500 font-semibold px-3 py-2 rounded-md hover:bg-gray-100 transition" >Resources</a>
+                <a href="#community" class="text-slate-500 font-semibold px-3 py-2 rounded-md hover:bg-gray-100 transition" >Community</a>
+                <a href="#signup" class="bg-blue-600 text-white px-3 py-2 rounded-md font-semibold hover:bg-blue-700 transition" >Get Started</a>
+            </nav>
+        </header>
+
+        <section class="hero grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-6 items-center mb-7" aria-labelledby="hero-heading">
+            <div class="card bg-white/60 backdrop-blur-sm p-7 rounded-xl shadow-lg">
+                <h1 id="hero-heading" class="text-3xl font-bold mb-3">Your weekly learning playground</h1> <p class="lead text-slate-500 mb-4">Curated bite-sized courses, hands-on projects, and community challenges to keep you
+                    learning consistently.</p>  
+                <div class="cta-row flex gap-3">
+                    <button class="bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition">Explore Courses</button>
+                    <button class="border-2 border-blue-100 text-blue-600 font-bold py-3 px-4 rounded-lg hover:bg-blue-50 transition">Join Community</button>
+                </div>
+
+                <hr class="my-4 border-t border-indigo-50"> 
+
+                <div class="flex gap-3 flex-wrap"> 
+                    <div class="min-w-40"> 
+                        <div class="text-sm text-slate-500">Next live workshop</div> <div class="font-bold">Stateful APIs • Dec 15</div> </div>
+                    <div class="min-w-40"> 
+                        <div class="text-sm text-slate-500">Active learners</div> <div class="font-bold">3,412</div> </div>
+                </div>
+            </div>
+
+            <aside class="bg-gradient-to-b from-gray-100 to-gray-200 p-9 rounded-xl shadow-xl" aria-labelledby="signup-title">
+                <h2 id="signup-title" class="text-xl font-bold mb-2">Start your free plan</h2>
+                <p class="text-sm text-slate-500 mb-3">No credit card — upgrade anytime.</p> <form id="signup" class="flex flex-col gap-3">
+                    <input type="text" placeholder="Full name"
+                        class="p-3 border border-blue-100 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" /> <input type="email" placeholder="Email address"
+                        class="p-3 border border-blue-100 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" /> <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition">Create account</button>
+                </form>
+            </aside>
+        </section>
+
+        <section class="features grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-7" aria-label="features">
+            <div class="feature bg-white p-5 rounded-xl shadow flex gap-3 hover:shadow-lg transition">
+                <div
+                    class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold"> PG</div>
+                <div>
+                    <h3 class="font-bold mb-1" >Project Guided</h3>
+                    <p class="text-sm text-slate-500">Short projects with guided steps and solution walkthroughs.</p>
+                </div>
+            </div>
+
+            <div class="feature bg-white p-5 rounded-xl shadow flex gap-3 hover:shadow-lg transition">
+                <div
+                    class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+                    LR</div>
+                <div>
+                    <h3 class="font-bold mb-1">Learning Roadmaps</h3>
+                    <p class="text-sm text-slate-500">Structured paths from beginner to job-ready levels.</p>
+                </div>
+            </div>
+
+            <div class="feature bg-white p-5 rounded-xl shadow flex gap-3 hover:shadow-lg transition">
+                <div
+                    class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+                    CM</div>
+                <div>
+                    <h3 class="font-bold mb-1">Community Mentors</h3>
+                    <p class="text-sm text-slate-500">Mentor hours and peer feedback to accelerate growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-7">
+            <article class="bg-white p-3 rounded-lg flex flex-col gap-2 shadow hover:shadow-md transition">
+                <img class="w-full h-[110px] rounded-md object-cover"
+                    src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=800&auto=format&fit=crop"
+                    alt="notebook and coffee">
+                <h4 class="text-sm font-bold">How to build a daily coding habit</h4>
+                <p class="text-xs text-slate-500">10 min read • Beginner</p>
+            </article>
+
+            <article class="bg-white p-3 rounded-lg flex flex-col gap-2 shadow hover:shadow-md transition">
+                <img class="w-full h-[110px] rounded-md object-cover"
+                    src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop"
+                    alt="laptop">
+                <h4 class="text-sm font-bold">Deploy your first Node.js app</h4>
+                <p class="text-xs text-slate-500">30 min guide • Intermediate</p>
+            </article>
+
+            <article class="bg-white p-3 rounded-lg flex flex-col gap-2 shadow hover:shadow-md transition">
+                <img class="w-full h-[110px] rounded-md object-cover"
+                    src="https://images.unsplash.com/photo-1515165562835-c6c8f2d0d6f9?q=80&w=800&auto=format&fit=crop"
+                    alt="whiteboard diagram">
+                <h4 class="text-sm font-bold">System design crash course</h4>
+                <p class="text-xs text-slate-500">45 min • Intermediate</p>
+            </article>
+
+            <article class="bg-white p-3 rounded-lg flex flex-col gap-2 shadow hover:shadow-md transition">
+                <img class="w-full h-[110px] rounded-md object-cover"
+                    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop"
+                    alt="team">
+                <h4 class="text-sm font-bold">How to work in open source</h4>
+                <p class="text-xs text-slate-500">25 min • All levels</p>
+            </article>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-5 mb-7">
+        
+            <div class="flex flex-col gap-4">
+
+                <div class="bg-white p-5 rounded-xl shadow">
+                    <h3 class="font-bold mb-3 text-xl">Your active courses</h3> <div class="flex flex-col gap-4"> <div class="flex justify-between items-center gap-3 border-b pb-4 border-gray-100"> <div>
+                                <div class="font-bold">Fullstack Basics</div>
+                                <div class="text-sm text-slate-500">Module 3 of 8</div>
+                            </div>
+
+                            <div class="min-w-[120px]">
+                                <div class="text-sm text-slate-500">Progress</div>
+                                <div class="h-2 bg-indigo-50 rounded-lg mt-1 overflow-hidden">
+                                    <div class="h-full w-[78%] bg-gradient-to-r from-blue-600 to-pink-400"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="flex justify-between items-center gap-3">
+                            <div>
+                                <div class="font-bold">Intro to Databases</div>
+                                <div class="text-sm text-slate-500">Module 1 of 5</div>
+                            </div>
+
+                            <div class="min-w-[120px]">
+                                <div class="text-sm text-slate-500">Progress</div>
+                                <div class="h-2 bg-indigo-50 rounded-lg mt-1 overflow-hidden">
+                                    <div class="h-full w-[36%] bg-gradient-to-r from-green-400 to-yellow-400"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                <div class="bg-white p-5 rounded-xl shadow">
+                    <h3 class="font-bold mb-3 text-xl">Community Challenges</h3> <ul class="grid gap-4"> <li class="bg-gray-50 p-3 rounded-lg flex justify-between items-center shadow-sm hover:bg-gray-100 transition"> <div>
+                                <div class="font-bold">30-day JS challenge</div>
+                                <div class="text-sm text-slate-500">Day 12 • 120 people active</div>
+                            </div>
+                            <button class="border-2 border-blue-100 text-blue-600 font-bold px-3 py-2 rounded-lg hover:bg-blue-50 transition">Join</button>
+                        </li>
+
+                        <li class="bg-gray-50 p-3 rounded-lg flex justify-between items-center shadow-sm hover:bg-gray-100 transition"> <div>
+                                <div class="font-bold">Weekly Algo Sprint</div>
+                                <div class="text-sm text-slate-500">Sat • 10:00 AM</div>
+                            </div>
+                            <button class="border-2 border-blue-100 text-blue-600 font-bold px-3 py-2 rounded-lg hover:bg-blue-50 transition">RSVP</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            
+            <aside class="bg-white p-5 rounded-xl shadow flex flex-col gap-5">
+
+                
+                <div>
+                    <h4 class="font-bold mb-1">Learning streak</h4>
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <div class="text-sm text-slate-500">This week</div>
+                            <div class="font-bold">4 days</div>
+                        </div>
+                        <div class="h-2 bg-indigo-50 rounded-lg flex-1 overflow-hidden">
+                            <div class="h-full w-[64%] bg-gradient-to-r from-purple-600 to-cyan-400"></div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <h4 class="font-bold mb-1">Recommended topic</h4>
+                    <div class="font-bold">APIs with Express</div>
+                    <p class="text-sm text-slate-500 mt-2">
+                        A short path to build and deploy a REST API in under an hour.
+                    </p>
+                </div>
+
+                
+                <div class="mt-auto pt-4 border-t border-gray-100"> <h4 class="font-bold mb-2">Account</h4>
+                    <div class="text-sm text-slate-500">Email: student@example.com</div>
+                    <button class="border-2 border-blue-100 text-blue-600 font-bold px-3 py-2 rounded-lg mt-3 hover:bg-blue-50 transition">
+                        Manage plan
+                    </button>
+                </div>
+            </aside>
+
+        </section>
+
+        <footer class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 border-t border-gray-200"> <div>
+                <div class="font-extrabold text-lg">StudyHub</div> <div class="text-sm text-slate-500">Learn together • Build faster</div>
+            </div>
+
+            <div class="flex justify-start sm:justify-end gap-4 flex-wrap text-sm text-slate-500"> <a href="#" class="hover:text-blue-600">Terms</a>
+                <a href="#" class="hover:text-blue-600">Privacy</a>
+                <a href="#" class="hover:text-blue-600">Support</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
